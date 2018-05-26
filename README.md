@@ -1,34 +1,28 @@
-# Welcome to Buffalo!
+# Recipe Rank App 🥖 🥗 🍗
 
-Thank you for choosing Buffalo for your web development needs.
+## About
+This app uses the Go Buffalo framework (https://gobuffalo.io/en) and Angular. This will be a web app where users can view, share, and score recipes, while also building a personal recipe collection.
 
-## Database Setup
+## Getting Started
 
-It looks like you chose to set up your application using a postgres database! Fantastic!
+Install dependencies
 
-The first thing you need to do is open up the "database.yml" file and edit it to use the correct usernames, passwords, hosts, etc... that are appropriate for your environment.
+`make deps`
 
-You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start postgres for you.
+Start up the local postgres database
 
-### Create Your Databases
+`make dcu`
 
-Ok, so you've edited the "database.yml" file and started postgres, now Buffalo can create the databases in that file for you:
+Create the local database
 
-	$ buffalo db create -a
-## Starting the Application
+`make db`
 
-Buffalo ships with a command that will watch your application and automatically rebuild the Go binary and any assets for you. To do that run the "buffalo dev" command:
+Build the app
 
-	$ buffalo dev
+`make build`
 
-If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
+Starting the app (With hot reloading)
 
-**Congratulations!** You now have your Buffalo application up and running.
+`make dev-server`
 
-## What Next?
-
-We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and reviewing all of the great documentation there.
-
-Good luck!
-
-[Powered by Buffalo](http://gobuffalo.io)
+Navigate to http://127.0.0.1:3000

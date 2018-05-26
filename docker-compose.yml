@@ -1,0 +1,8 @@
+postgres:
+  restart: always
+  image: postgres:latest
+  ports:
+    - "5432:5432"
+  environment:
+    POSTGRES_PASSWORD: top_secret_password
+    POSTGRES_USER: postgres
