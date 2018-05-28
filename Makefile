@@ -3,6 +3,7 @@ deps:
 	npm install --save-dev
 
 build: 
+	ng build
 	buffalo build	
 
 clean:

@@ -7,7 +7,6 @@ import (
 	"github.com/gobuffalo/envy"
 	"github.com/unrolled/secure"
 
-	"github.com/bguilder/recipe_app/models"
 	"github.com/gobuffalo/buffalo/middleware/csrf"
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
@@ -45,7 +44,7 @@ func App() *buffalo.App {
 		// Wraps each request in a transaction.
 		//  c.Value("tx").(*pop.PopTransaction)
 		// Remove to disable this.
-		app.Use(middleware.PopTransaction(models.DB))
+		//app.Use(middleware.PopTransaction(models.DB))
 
 		// Setup and use translations:
 		var err error

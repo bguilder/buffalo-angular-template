@@ -6,15 +6,16 @@ import (
 )
 
 var r *render.Engine
-var assetsBox = packr.NewBox("../public")
+
+var assetsBox = packr.NewBox("../dist/recipes")
 
 func init() {
 	r = render.New(render.Options{
-		// HTML layout to be used for all HTML requests:
-		HTMLLayout: "application.html",
+		// // HTML layout to be used for all HTML requests:
+		// HTMLLayout: "application.html",
 
 		// Box containing all of the templates:
-		TemplatesBox: packr.NewBox("../templates"),
+		TemplatesBox: packr.NewBox("../dist/recipes"),
 		AssetsBox:    assetsBox,
 
 		// Add template helpers here:
