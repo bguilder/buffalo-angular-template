@@ -1,7 +1,7 @@
-# Recipe Rank App 🥖 🥗 🍗
+# buffalo-angular-template 
 
 ## About
-This app uses the Go Buffalo framework (https://gobuffalo.io/en) and Angular. This will be a web app where users can view, share, and score recipes, while also building a personal recipe collection.
+This app is a template for creating an application using the Go Buffalo framework (https://gobuffalo.io/en) and Angular.
 
 ## Getting Started
 
